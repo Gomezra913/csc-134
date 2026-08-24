@@ -8,5 +8,7 @@
 using namespace std; 
 
 int main() {    
+    cout << "hello world, csc 134!!"; // c-out, not count 
+    cout << endl;                     // endl or "\n" is ned of line.
     return 0; //errors 
  }
