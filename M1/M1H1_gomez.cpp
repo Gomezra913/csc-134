@@ -3,7 +3,7 @@
 M1H1 - Movie talk
 Gomez, R
 8/31/26
-Example: Talk about Sherk 
+Example: Talk about spider-man 
 */ 
 
 #include <iostream>
