@@ -13,22 +13,25 @@ using namespace std;
 int main() { 
      // purpose: practice using string, int , and double within natural text.
      // Decalre variables  
-     string movie_name; 
+     string movie_name;     // Film title as in IMDM
      int    movie_year;     // year of release 
-     double movie_grossm;   // about half a billion, internationally
+     double movie_grossm;   // almost a billion, internationally
 
-     // Example: sherk 
-     movie_name = "sherk"; 
-     movie_year = 2001; 
-     movie_grossm = 484.4; // about half a billion, internationally 
+     // Example: Spider man  
+     movie_name = "Spider-man"; 
+     movie_year = 2002; 
+     movie_grossm = 825; // almost a billion, worldwide  
      
      // print the blurb 
-     cout << "The movie " << " came out in " << movie_year << "." << endl; 
+     cout << "The movie " << movie_name << " came out in " << movie_year << "." << endl; 
     
-     cout << "It grossed in total $" << movie_grossm << "million." << endl; 
+     cout << "It grossed in total $" << movie_grossm << " million." << endl; 
+
+     cout << "(at around 18 mins) After Parker wakes up the morning after getting bitten," << endl; 
+     cout << "a boom mic is seen at the top of the mirror as he is looking at himself." << endl;
      
      // Print a movie qoute 
-     cout << "QOUTE:" << endl << "\t\"ogers are like onions. Onions have layers. Ogers have layers.\" " << endl; 
+     cout << "QOUTE:" << endl << "\t\"with great power comes great responsibility\" " << endl; 
 
      return 0; // no errors 
 }
