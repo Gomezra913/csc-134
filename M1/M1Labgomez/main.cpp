@@ -1,32 +1,26 @@
-// csc 134
-// M1Lab - apple sales
-// Gomez
-// 8/26/26
-// calculate apple prices.
+// one line comment
+/*
+block comment
+M1T1 - Hello World
+Gomez
+8/19/26
+First program - just a smoke test.
+*/
 
+// magic words to start u[
 #include <iostream>
+
 using namespace std;
 
 int main()
 {
-    // Introduce yourself
-    string name = "Gomez";
-    string product = "apple";
+    cout << "Hello world CSC 134!" << endl;
+    // name is a VARIABLE - a verb
+    string name;
+    cout << "What's your name? ";
+    cin >> name; // input - reads the name into this variable
 
-    cout << "Welcome to the " << name << " ";
-    cout << product << " farm. " << endl;
+    cout << "This program is for : " << name << endl;
+    return 0; // no errors
 
-    // do product price calculation
-    int product_count = 100;
-    double product_price = .25; // in USD
-
-    cout << "We have " << product_count << " ";
-    cout << product << "(s). They are $" << product_price;
-    cout << " each. " << endl;
-
-    double total_price = product_count * product_price;
-    cout << "Total for all " << product_count;
-    cout << " is: $ " << total_price << endl;
-
-    return 0;
 }
