@@ -22,8 +22,8 @@ int main() {
     cin  >> length; 
     cout << "create width:  ";
     cin  >> width;
-    cout >> "crate height: ";
-    cin  << height;
+    cout << "crate height: ";
+    cin  >> height;
 
 
     volume = length = width = height;
@@ -45,4 +45,5 @@ int main() {
     cout << "sells for:     $" << crate_charge << endl;
     cout << "Profit:        $" << profit << endl; 
 
-} return 0; // no errors 
+ return 0; // no errors 
+}
