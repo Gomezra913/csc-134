@@ -71,6 +71,38 @@ void question1(){
 
 void question2(){
 
+    const double COST_PER_CUBIC_FOOT = 0.30;   
+    const double CHARGE_PER_CUBIC_FOOT = 0.52; 
+
+
+    double length, width, height; 
+    double volume;
+    double crate_cost;
+    double crate_charge;
+    double profit;
+
+    cout << "Please enter the crate dimesions." << endl; 
+    cout << "crate length: ";
+    cin  >> length; 
+    cout << "create width:  ";
+    cin  >> width;
+    cout << "crate height: ";
+    cin  >> height;
+
+    volume = length = width = height;
+
+    crate_cost = COST_PER_CUBIC_FOOT * volume;
+    crate_charge = CHARGE_PER_CUBIC_FOOT * volume;
+
+    profit = crate_charge - crate_cost; 
+
+    cout << setprecision(2) << fixed; 
+    cout << " A crate measuring " << length << " x " << width << " x " << height << " ft. " << endl;
+    cout << "Is volume: " << volume << " cubic ft." << endl; 
+    cout << endl; 
+    cout << "cost to build: $" << crate_cost << endl;
+    cout << "sells for:     $" << crate_charge << endl;
+    cout << "Profit:        $" << profit << endl; 
 
 }
 
