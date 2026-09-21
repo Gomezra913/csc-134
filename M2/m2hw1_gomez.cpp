@@ -140,6 +140,20 @@ void question3() {
 
 void question4(){
 
+    string letsGo, school, team, cheerOne, cheerTwo;
+
+    letsGO = "Let's go ";
+    school = "FTCC";
+    team = "Trojans";
+
+    cheerOne = letsGo + school;
+    cheerTwo = letsGo + team;
+    
+    cout << cheerOne 
+
+
+
+
 
 }
 
