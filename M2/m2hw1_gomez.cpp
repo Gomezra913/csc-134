@@ -13,19 +13,76 @@ using namespace std;
 
 
 void question1();
-void question1();
-void question1();
-void question1();
+void question2();
+void question3();
+void question4();
 
 
 
 int main() {
+cout << " Bank Transaction" << endl;
+question1();
 
+cout << " Solid snake crates inc. " << endl;
+question2();
+
+cout << " Pizza party slice calculator " << endl;
+question3(); 
+
+cout << "Cheering " << endl;
+question4(); 
+
+    return 0;
 }
+
 void question1(){
+
+    string transfer_name;
+    double transfer_amount;
+    double bank_fee;
+    double bank_amount;
+    double withdraw_amount;
+    double total;
     
+    transfer_name = "Account number 9800";
+    transfer_amount = 10000.00;
+    withdraw_amount = 1500.00;
+    bank_fee = 0.50;
+
+    bank_amount = transfer_amount - bank_fee;
+    total       = transfer_amount + bank_amount - withdraw_amount;
+
+
+    cout << "Acount holder: John Smith " << endl;
+
+    string line = "---------------------------";
+    cout << line << endl; 
+
+    cout << setprecision (2) << fixed; 
+    cout << setw(20) << transfer_name << endl;
+    cout << setw(5) << "  deposit "  << setw(10) << transfer_amount << endl;
+    cout << setw(10) << " withdraw "  << setw(10) << withdraw_amount << endl; 
+    cout << setw(10) << " fee " << setw(10) << bank_fee << endl;
+    cout << line << endl;
+    cout << setw(10) << "total: " << setw(10) << total << endl; 
+    cout << "Thank you for Trusting our bank " << endl << endl;
+
 }
 
+void question2(){
+
+
+}
+
+void question3() {
+
+
+}
+
+void question4(){
+
+
+}
 
 
 
