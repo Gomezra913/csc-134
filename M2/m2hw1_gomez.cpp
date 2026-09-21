@@ -84,12 +84,12 @@ void question2(){
     cout << "Please enter the crate dimesions." << endl; 
     cout << "crate length: ";
     cin  >> length; 
-    cout << "create width:  ";
+    cout << "create width: ";
     cin  >> width;
     cout << "crate height: ";
     cin  >> height;
 
-    volume = length = width = height;
+    volume = length * width * height;
 
     crate_cost = COST_PER_CUBIC_FOOT * volume;
     crate_charge = CHARGE_PER_CUBIC_FOOT * volume;
@@ -98,7 +98,7 @@ void question2(){
 
     cout << setprecision(2) << fixed; 
     cout << " A crate measuring " << length << " x " << width << " x " << height << " ft. " << endl;
-    cout << "Is volume: " << volume << " cubic ft." << endl; 
+    cout << "It's volume: " << volume << " cubic ft." << endl; 
     cout << endl; 
     cout << "cost to build: $" << crate_cost << endl;
     cout << "sells for:     $" << crate_charge << endl;
@@ -107,6 +107,33 @@ void question2(){
 }
 
 void question3() {
+
+    const int SLICES_PER_PERSON = 3;
+
+    int Pizzas;
+    int slicesPerPizza;
+    int visitors; 
+    int total; 
+    int slicesEaten;
+    int leftOverSlices;
+
+    cout << " Enter how many pizzas there are. " << endl; 
+    cout << " Pizzas: ";
+    cin >>   Pizzas;
+    cout << " how many visitors are there. " << endl;
+    cout << " visitors ";
+    cin >>   visitors;
+    cout << " SlicesPerPizza ";
+    cin >>  slicesPerPizza;
+    
+    total = Pizzas * slicesPerPizza;
+    slicesEaten = visitors * 3;
+    leftOverSlices = total - slicesEaten;
+
+    cout << setprecision(2) << fixed; 
+    cout << "There will be " << leftOverSlices << " leftover slices." << endl;
+
+
 
 
 }
