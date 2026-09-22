@@ -139,17 +139,24 @@ void question3() {
 }
 
 void question4(){
+    // song lyrics by monteal fish
 
-    string letsGo, school, team, cheerOne, cheerTwo;
+    string o1, o2, o3, o4, cheerOne, cheerTwo, cheerThree;
 
-    letsGO = "Let's go ";
-    school = "FTCC";
-    team = "Trojans";
+    o1 = "she said she loved me ";
+    o2 = "and that she wanted me";
 
-    cheerOne = letsGo + school;
-    cheerTwo = letsGo + team;
+    o4 = "it's evil";
+
+    cheerOne = o1;
+    cheerThree = o2;
+    cheerTwo = o4;
     
-    cout << cheerOne 
+    cout << cheerOne << endl;
+    cout << cheerThree << endl;
+
+    cout << cheerTwo << endl;
+    
 
 
 
