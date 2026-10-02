@@ -1,6 +1,6 @@
 /*
 CSC 134 
-M2HW1 - 4 questions  
+M2HW1 - 4 questions  - Gold
 Gomez. R 
 9/16/26
 */
