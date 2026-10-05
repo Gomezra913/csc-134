@@ -12,9 +12,10 @@ using namespace std;
 
 int main() {
     cout << "lets roll some dice!" << endl;
-    int seed;
-    cout << "Whats you lucky number?";
-    cin >> seed; 
+    int seed = time(0); 
+    cout << "Your seed is: " << seed << endl; 
+    //cout << "Whats you lucky number?";
+    //cin >> seed; 
 
     srand (seed);
    
