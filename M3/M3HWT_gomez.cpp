@@ -7,17 +7,10 @@
 using namespace std;
 #include <string>
 #include <iomanip>
+#include <cmath>
+#include <ctime>
 
 int main() {
-
-
-    
-
-    cout << "question 3 " << endl;
-
-    cout << "question 4 " << endl;
-
-
 
     cout << "question 1" << endl; 
 
@@ -86,7 +79,60 @@ int main() {
     
     cout << "Thank you come again" << endl << endl;
 
+
+    cout << "question 3 " << endl;
+    int choice;
     
+    cout << "Do you choose door 1 or door 2 or option 3?" << endl;
+    cout << "1. choose door #1" << endl;
+    cout << "2. choose door #2" << endl;
+    cout << "3. look behind you #3" << endl;
+    cin >> choice;
+
+    if (choice == 1) {
+       
+        cout << "you enter a room and escaped !" << endl;
+    }
+    else if (choice == 2) {
+        cout << "You walked into a trap and get captured" << endl;
+    }
+
+    else if (choice == 3){
+        cout << "You get poked" << endl;
+    }
+
+    
+    
+    cout << "question 4 " << endl;
+
+    srand(time(0)); 
+
+    int num1 = rand() % 10;
+    int num2 = rand() % 10;
+
+    int correctanswer = num1 + num2;
+    int myanswer;
+
+    cout << "What is " << num1 << " plus " << num2 << "?" << endl;
+    cin >> myanswer;
+
+    if (myanswer == correctanswer) {
+        cout << "correct!" << endl;
+    }
+    else { 
+        cout << "Incorrect. The right answer was " << correctanswer << "." << endl;
+    }
+
+
+    return 0;
+} 
+
+
+
+
+ 
+
+
 
 
 
@@ -124,5 +170,4 @@ int main() {
 
 
 
-    return 0;
-}
+   
