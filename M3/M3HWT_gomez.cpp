@@ -6,17 +6,18 @@
 #include <iostream>
 using namespace std;
 #include <string>
+#include <iomanip>
 
 int main() {
 
-    //question 1 
-    cout << "question 1" << endl;
 
-    cout << "question 2 " << endl;
+    
 
     cout << "question 3 " << endl;
 
-    cout << "question 4 " << endl; 
+    cout << "question 4 " << endl;
+
+
 
     cout << "question 1" << endl; 
 
@@ -39,6 +40,60 @@ int main() {
     }
 
     cout << endl; 
+
+  
+  
+  
+    
+    cout << "Question 2" << endl;
+    
+    string meal_name = "Chicken sandwich";
+    double meal_price; 
+    double tax_rate = 0.08;
+    double tax_amount;
+    double tip_amount = 0.0; 
+    double total;
+    int orderType;
+
+    
+    cout << "Please enter the price of the meal: ";
+    cin >> meal_price;
+
+    cout << "Please enter 1 if the order is dine in, 2 if it is to go: ";
+    cin >> orderType;
+
+    
+    tax_amount = meal_price * tax_rate;
+
+    
+    if (orderType == 1) {
+        tip_amount = meal_price * 0.15;
+    }
+
+    total = meal_price + tax_amount + tip_amount; 
+
+    
+    string line = "---------------------------------";
+    cout << line << endl;
+    
+    cout << setprecision(2) << fixed;
+    
+    cout << setw(20) << meal_name << setw(10) << meal_price << endl;
+    cout << setw(20) << " tax " << setw(10) << tax_amount << endl;
+    cout << setw(20) << " tip " << setw(10) << tip_amount << endl; // Added tip to receipt
+    cout << line << endl;
+    cout << setw(20) << "total: " << setw(10) << total << endl;
+    
+    cout << "Thank you come again" << endl << endl;
+
+    
+
+
+
+
+        
+
+
 
 
 
