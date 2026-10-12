@@ -30,4 +30,4 @@ for copy in range(REPEATS):
 t.hideturtle()
 turtle.done()
 
-// not if i did it right on idle the hexagons things run 
+# not if i did it right on idle the hexagons things run 
