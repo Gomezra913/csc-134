@@ -1,3 +1,8 @@
+// Gomez.R 
+// csc 134
+//10/19
+// M5T1
+
 #include <iostream>
 using namespace std;
 
