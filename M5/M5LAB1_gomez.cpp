@@ -15,7 +15,7 @@ void choice_back_door();
 void choice_go_home();
 // TODO: add your new prototypes here
 void join_tour();
-void too_werid();
+void too_weird();
 int main() {
 cout << "M5LAB1 - Choose Your Own Adventure" << endl;
 // Start the story.
@@ -76,6 +76,7 @@ choice_back_door();
 choice_go_home();
 }
 }
+
 void choice_back_door() {
 cout << "You befrined someone" << endl; 
 cout << "1. Join them on a tour of the party" << endl;
@@ -88,8 +89,9 @@ cin >> choice;
 
 if (1 == choice) {
     join_tour();
-}else if (2 == choice){
-    too_werid();
+}
+else if (2 == choice){
+    too_weird();
 }
 }
 void join_tour(){
@@ -97,7 +99,7 @@ void join_tour(){
 
 }
 
-void too_werid(){
+void too_weird(){
     cout << "you decide to go home, as you got to bed you find the mask you lefy behind" << endl;
 }
 
