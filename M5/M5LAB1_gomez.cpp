@@ -14,6 +14,8 @@ void choice_front_door();
 void choice_back_door();
 void choice_go_home();
 // TODO: add your new prototypes here
+void join_tour();
+void too_werid();
 int main() {
 cout << "M5LAB1 - Choose Your Own Adventure" << endl;
 // Start the story.
@@ -27,9 +29,10 @@ return 0; // finished with no errors
 void main_menu() {
 // A menu that accepts 1, 2, 3, or 4 (quit).
 cout << "Main Menu" << endl;
-cout << "You're in front of a spooky old house..." << endl;
+cout << "You get invited by a friend to go to a " << endl;
+cout << "mistouirs party that requires a password a mask to enter" << endl;
 cout << "Do you:" << endl;
-cout << "1. Try the front door" << endl;
+cout << "1. Enter the manision " << endl;
 cout << "2. Sneak around back" << endl;
 cout << "3. Forget it, and go home" << endl;
 cout << "4. [Quit]" << endl;
@@ -58,10 +61,11 @@ main_menu(); // try again
 }
 }
 void choice_front_door() {
-cout << "Try the front door." << endl;
-cout << "It's locked." << endl;
+cout << "You give the password to the door man." << endl;
+cout << "You enter a room full of people in robes and mask" << endl;
+cout << "just like you were told to dress." << endl;
 cout << "Do you:" << endl;
-cout << "1. Check around back" << endl;
+cout << "1. stay in the back of the room and obsever" << endl;
 cout << "2. Give up and go home" << endl;
 int choice = 0;
 cout << "Choose: ";
@@ -73,9 +77,28 @@ choice_go_home();
 }
 }
 void choice_back_door() {
-cout << "TODO: Write something here" << endl;
+cout << "You befrined someone" << endl; 
+cout << "1. Join them on a tour of the party" << endl;
+cout << "2. The party is to weird and decied to go home" << endl;
+
+
+int choice;
+cout << "choose:";
+cin >> choice;
+
+if (1 == choice) {
+    join_tour();
+}else if (2 == choice){
+    too_werid();
 }
-void choice_go_home() {
-cout << "TODO: Write something here" << endl;
 }
-// TODO: add your new function definitions here
+void join_tour(){
+    cout << "You see things that you've never imagained, behind the mask you're frightend" << endl;
+
+}
+
+void too_werid(){
+    cout << "you decide to go home, as you got to bed you find the mask you lefy behind" << endl;
+}
+
+
