@@ -22,6 +22,7 @@ void choice_go_home();
 
 
 
+
 int main() {
 cout << "M5LAB1 - Choose Your Own Adventure" << endl;
 // Start the story.
@@ -52,20 +53,31 @@ choice = 0; // treat it as an invalid choice
 }
 // Throw away the rest of the line the player typed.
 cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
 if (1 == choice) {
 choice_front_door();
-} else if (2 == choice) {
+} 
+
+else if (2 == choice) {
 // call choice 2 here
-} else if (3 == choice) {
+} 
+
+else if (3 == choice) {
 // call choice 3 here
-} else if (4 == choice) {
+} 
+
+else if (4 == choice) {
 cout << "Ok, quitting game" << endl;
 return; // go back to main()
-} else {
+} 
+
+else {
 cout << "That's not a valid choice, please try again." << endl;
-main_menu(); // try again
+main_menu(); 
 }
+
 }
+
 void choice_front_door() {
 cout << "You give the password to the door man." << endl;
 cout << "You enter a room full of people in robes and mask" << endl;
@@ -74,20 +86,30 @@ cout << "Do you:" << endl;
 cout << "1. stay in the back of the room and obsever" << endl;
 cout << "2. Give up and go home" << endl;
 
-int choice = 0;
 
-cout << "Choose: ";
+int choice; 
 
 cin >> choice;
 
-
-if (1 == choice) {
-choice_back_door();
-
-}else if (2 == choice) {
-choice_go_home();
+if (choice == 1) {
+    cout << " You stay in the back and watch " << endl;
+}
+else if (choice == 2) {
+    cout << "You get weirded out and go home" << endl;
+}
+else {
+    cout << "thats not a valid choice, try again" << endl;
+    choice_front_door();
 }
 }
+void too_weird(){
+    cout << "You get weirded out and leave to go home, when you go to bed, yopu find the mask behind on your bed" << endl;
+
+}
+
+
+
+
 
 
 
