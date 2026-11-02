@@ -11,11 +11,17 @@ using namespace std;
 
 void main_menu();
 void choice_front_door();
-void choice_back_door();
-void choice_go_home();
+
 // TODO: add your new prototypes here
+
+void choice_back_door();
 void join_tour();
 void too_weird();
+void choice_go_home();
+
+
+
+
 int main() {
 cout << "M5LAB1 - Choose Your Own Adventure" << endl;
 // Start the story.
@@ -67,40 +73,22 @@ cout << "just like you were told to dress." << endl;
 cout << "Do you:" << endl;
 cout << "1. stay in the back of the room and obsever" << endl;
 cout << "2. Give up and go home" << endl;
+
 int choice = 0;
+
 cout << "Choose: ";
+
 cin >> choice;
+
+
 if (1 == choice) {
 choice_back_door();
-} else if (2 == choice) {
+
+}else if (2 == choice) {
 choice_go_home();
 }
 }
 
-void choice_back_door() {
-cout << "You befrined someone" << endl; 
-cout << "1. Join them on a tour of the party" << endl;
-cout << "2. The party is to weird and decied to go home" << endl;
 
-
-int choice;
-cout << "choose:";
-cin >> choice;
-
-if (1 == choice) {
-    join_tour();
-}
-else if (2 == choice){
-    too_weird();
-}
-}
-void join_tour(){
-    cout << "You see things that you've never imagained, behind the mask you're frightend" << endl;
-
-}
-
-void too_weird(){
-    cout << "you decide to go home, as you got to bed you find the mask you lefy behind" << endl;
-}
 
 
