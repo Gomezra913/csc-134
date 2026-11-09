@@ -37,9 +37,9 @@ void main_menu() {
 // A menu that accepts 1, 2, 3, or 4 (quit).
 cout << "Main Menu" << endl;
 cout << "You get invited by a friend to go to a " << endl;
-cout << "mistouirs party that requires a password a mask to enter" << endl;
+cout << "mysterious party that requires a password a mask to enter" << endl;
 cout << "Do you:" << endl;
-cout << "1. Enter the manision " << endl;
+cout << "1. Enter the mansion " << endl;
 cout << "2. Sneak around back" << endl;
 cout << "3. Forget it, and go home" << endl;
 cout << "4. [Quit]" << endl;
@@ -76,11 +76,17 @@ else {
 cout << "That's not a valid choice, please try again." << endl;
 main_menu(); 
 }
-
 }
+
+void choice_back_door(){
+    cout << " you get kidnapped " << endl;
+}
+
+
+
 void choice_go_home(){
     cout <<" You got lucky, YOU got to live a normal life" << endl;
-    cout << "1. Are you thinking about going back " << endl;
+    cout << "1. You are thinking about going back " << endl;
     cout << "2. You never think about it again" << endl;
     cout << "3. Quit" << endl;
 
@@ -93,8 +99,9 @@ think_about();
 }
 else if (2 == choice) {
 normal_life();
-} 
-else if (3 == choice) {
+}
+
+else if (4 == choice) {
 cout << "Ok, quitting game" << endl;
 return; 
 } 
@@ -103,19 +110,14 @@ else {
 cout << "That's not a valid choice, please try again." << endl;
 main_menu(); 
 }
-}                                             
-
-
-void think_about() {
-    cout << "You loss everything trying to go back" << endl;
-}
+}                                  
 
 void choice_front_door() {
 cout << "You give the password to the door man." << endl;
 cout << "You enter a room full of people in robes and mask" << endl;
 cout << "just like you were told to dress." << endl;
 cout << "Do you:" << endl;
-cout << "1. stay in the back of the room and obsever" << endl;
+cout << "1. stay in the back of the room and observe" << endl;
 cout << "2. Give up and go home" << endl;
 cout << "3. Quit" << endl;
 
@@ -124,7 +126,7 @@ int choice;
 
 cin >> choice;
 if (choice == 1) {
-        cout << " You stay in the back and watch " << endl;
+        cout << " You get called out and ask to follow someone " << endl;
         
         
         cout << "Do you:" << endl;
@@ -156,5 +158,15 @@ if (choice == 1) {
     else {
         cout << "thats not a valid choice, try again" << endl;
     }
+
 }
 
+void think_about() {
+    cout << "You lose everything trying to go back." << endl;
+    cout << "Game Over." << endl;
+}
+
+void normal_life() {
+    cout << "You chose to live a normal life and forget everything." << endl;
+    cout << "Game Over." << endl;
+}
