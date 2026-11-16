@@ -107,6 +107,12 @@ int main() {
         }
     }
 
+    for (int i = 0; i < NUM_ROOMS; i++) {
+        for (int j = 0; j < NUM_DIRECTIONS; j++) {
+            connections[WINDOW][GETOUT] = 0;
+        }
+    }
+
     // ADD A ROOM, step 4 of 4: add the exits in BOTH rooms.
     // EDIT: change, add, or remove exits.
     // Read this line as: from the Entrance Hall, go north to reach the Library.
