@@ -1,9 +1,3 @@
-You are in the Entrance Hall
-A grand entrance hall with a dusty chandelier hanging above.
-Exits: north east west
-
-What would you like to do?
-
 
                  Library
                     |
@@ -19,16 +13,8 @@ Garden -- west -- Entrance Hall -- east -- Kitchen
                                   ==================== HOUSE ADVENTURE ====================
 
 ROOM MAP
-                    [ Library ] --- [STUDY]
+                    [ Library ] --- [STUDY] ---[window]
                          |
 [ Garden ] ---- [ Entrance Hall ] ---- [ Kitchen ]
                                              |
                                          [ Basement ]
-
-YOU ARE IN: Entrance Hall
-A grand entrance hall with a dusty chandelier hanging above.
-
-Available exits: North | East | West
-
-What would you like to do? _
-=========================================================

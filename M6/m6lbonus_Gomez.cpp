@@ -28,12 +28,13 @@ enum Direction {
     EAST,
     SOUTH,
     WEST,
+    GETOUT,
     NUM_DIRECTIONS      // KEEP: always the last name
 };
 
 // KEEP: the words must be in the same order as the Direction enum.
 const string DIRECTION_NAMES[NUM_DIRECTIONS] = {
-    "north", "east", "south", "west"
+    "north", "east", "south", "west","get out",
 };
 
 // ADD A ROOM, step 1 of 4: add the new name above NUM_ROOMS.
@@ -46,6 +47,7 @@ enum Room {
     BASEMENT,
     STUDY,  
     WINDOW,         // EXAMPLE 1 of 4
+    EXIT,
     NUM_ROOMS           // KEEP: always the last name
 };
 
@@ -65,7 +67,9 @@ int main() {
         "Garden",
         "Basement",
         "STUDY", 
-        "WINDOW",         
+        "WINDOW",  
+        "EXIT",
+        
     };
 
     // ADD A ROOM, step 3 of 4: add the new description at the end.
@@ -78,6 +82,7 @@ int main() {
         "An overgrown garden with stone pathways and a small fountain.",
         "A dark, damp basement with cobwebs in the corners.",
         "A large study with a mahogany desk and bookshelves. There is a window where you can escape.",
+        "It's a exit to freedom but it's a high fall"
     };
 
     // BONUS: objects. Use two more parallel arrays, the same way:
@@ -91,6 +96,8 @@ int main() {
     // connections[from_room][direction] holds the room you reach.
     // The value -1 means "no exit".
     // ============================================================
+
+
     int connections[NUM_ROOMS][NUM_DIRECTIONS];
 
     // KEEP: set every cell to -1 first. Then set only the exits that exist.
@@ -113,7 +120,8 @@ int main() {
     connections[BASEMENT][NORTH]      = KITCHEN;
     connections[LIBRARY][EAST]        = STUDY;     
     connections[STUDY][EAST]          = WINDOW;
-    connections[STUDY][WEST  ]        = LIBRARY;
+    connections[STUDY][WEST]          = LIBRARY;
+    connections[WINDOW][GETOUT]       = EXIT;
     // TRY: delete one "way back" line. Predict what the player can do.
 
     // ============================================================
